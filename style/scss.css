@@ -134,6 +134,10 @@ section .first-text .cards-visa .dist {
   font-weight: 300;
 }
 
+section .inputs {
+  padding: 3px;
+}
+
 section .inputs .photos {
   list-style: none;
   -webkit-box-align: center;
@@ -155,7 +159,7 @@ section label {
 }
 
 section .sizes {
-  width: 94vw;
+  width: 87vw;
   height: 7vh;
   padding: 1em;
   background-color: #ebe7eb;
@@ -175,9 +179,41 @@ section button {
   font-size: 16px;
   border-radius: 6px;
   color: #fff;
+  border: 1px solid;
 }
 
 section button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+}
+
+table {
+  border-top: 1px solid black;
+  width: 100%;
+  padding: 1em;
+}
+
+table tr td {
+  font-size: 18px;
+  color: #423a4b;
+}
+
+table tr td .small {
+  color: #cfcecf;
+}
+
+table tr button {
+  width: 80%;
+  height: 6vh;
+  background-color: #0e6fe0;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid;
+  color: #fff;
+}
+
+table tr button:hover {
   cursor: pointer;
   background-color: #fff;
   color: #333;
