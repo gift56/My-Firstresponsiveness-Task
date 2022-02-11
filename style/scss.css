@@ -6,6 +6,9 @@
 }
 
 header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   border-bottom: 2px solid black;
   display: -webkit-box;
@@ -14,7 +17,11 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px;
+  padding: 3vh 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 header a {
@@ -26,6 +33,154 @@ header a {
 
 header img {
   border-radius: 100%;
+  height: 5vh;
+}
+
+section {
+  width: 100%;
+  padding: 1em;
+  line-height: 1.8;
+}
+
+section h3 {
+  color: #333;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+section p {
+  color: #aaa9aa;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 1vh;
+}
+
+section .first-text {
+  background-image: url(/img/cardbackground.jpg);
+  border-radius: 10px;
+  height: 45vh;
+}
+
+section .first-text .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+section .first-text .cards h1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #272727;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin: 0vh 0px 0px 5vw;
+  line-height: 3;
+}
+
+section .first-text .cards img {
+  margin: 15vh 12px 1px 0px;
+}
+
+section .first-text .cards-visa {
+  margin: 0px 0px 0px 2vw;
+  text-align: left;
+  border-bottom: 1px dashed #777377;
+  width: 83vw;
+}
+
+section .first-text .cards-visa .card-first-text {
+  font-size: 20px;
+  color: antiquewhite;
+  margin: 0vh 0px 0px 5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+section .first-text .cards-visa .card-first-number {
+  font-size: 21px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0vh 0px 0px 4vw;
+}
+
+section .first-text .cards-visa .expired-text {
+  font-size: 18px;
+  color: antiquewhite;
+  margin: 0vh 0px 0px 5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+section .first-text .cards-visa .card-firsts {
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 9vw;
+}
+
+section .first-text .cards-visa .dist {
+  font-size: 18px;
+  color: antiquewhite;
+  margin: 0vh 25vw 0px 0vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+section .inputs .photos {
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section label {
+  font-size: 16px;
+  color: #6d6a6d;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section .sizes {
+  width: 94vw;
+  height: 7vh;
+  padding: 1em;
+  background-color: #ebe7eb;
+  border-radius: 9px;
+}
+
+section .radio {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+section button {
+  width: 100%;
+  height: 6vh;
+  background-color: #0e6fe0;
+  font-size: 16px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+section button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
 }
 
 @media screen and (min-width: 800px) {
@@ -56,6 +211,18 @@ header img {
   header img {
     border-radius: 100%;
     height: 10vh;
+    width: 10vw;
+  }
+  section .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px;
+    line-height: 1.6;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 16px;
   }
 }
 /*# sourceMappingURL=scss.css.map */
