@@ -1,3 +1,31 @@
 @mixin justice {
     justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin mobilejj {
+    display: flex;
+    align-items: center;
+}
+@mixin mobileflex {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+@mixin j2 {
+    align-items: center;
+    text-align: center;
+}
+
+@mixin mobile {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin form {
+    display: flex;
+    justify-content: space-evenly;
+}
+@mixin card-text {
+    margin-left: 2vw;
+    font-size: 18px;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repeat</title>
+    <title>My First Responsiveness Task</title>
 
     <link rel="stylesheet" href="/style/scss.css">
 </head>
@@ -20,71 +20,77 @@
         <img src="/img/logo.jfif" alt="logo" width="35px">
     </header>
     <section>
-        <h3>Payment Information</h3>
-        <p>Choose Your Method of Payment</p>
-        <div class="first-text">
-            <div class="cards">
-                <div class="cards-visa">
-                    <h1>Card Details</h1>
-                    <span class="chip-input">
-                        <strong class="card-first-text">Card Number</strong>
-                        <p class="card-first-number">1234 5678 9012 3456</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="/img/chipcard.png" alt="chip" width="50px">
+        <div class="info">
+            <div>
+                <h3>Payment Information</h3>
+                <p>Choose Your Method of Payment</p>
+                <div class="first-text">
+                    <div class="cards">
+                        <div class="cards-visa">
+                            <h1>Card Details</h1>
+                            <span class="chip-input">
+                                <strong class="card-first-text">Card Number</strong>
+                                <p class="card-first-number">1234 5678 9012 3456</p>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="/img/chipcard.png" alt="chip" width="50px">
+                        </div>
+                    </div>
+                    <div class="cards-visa">
+                        <div class="cards">
+                            <div class="expired-text">
+                                <small>Expiry Date</small>
+                                <p class="card-firsts">12/99</p>
+                            </div>
+                            <div class="dist">
+                                <small>Cvv</small>
+                                <p class="card-first">199</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visa">
+                        <img src="/img/images.png" alt="visa" width="60px">
+                    </div>
                 </div>
             </div>
-            <div class="cards-visa">
-                <div class="cards">
-                    <div class="expired-text">
-                        <small>Expiry Date</small>
-                        <p class="card-firsts">12/99</p>
-                    </div>
-                    <div class="dist">
-                        <small>Cvv</small>
-                        <p class="card-first">199</p>
-                    </div>
+            <div class="inputs">
+                <ul class="photos">
+                    <li><img src="/img/visa.jfif" alt="visa" width="26px"></li>
+                    <li><img src="/img/discover.jfif" alt="discover" width="90px"></li>
+                    <li><img src="/img/paypal-featured-image-removebg-preview.png" alt="paypal" width="80px"></li>
+                </ul>
+                <div class="input-form">
+                    <form action="post">
+                        <div class="ggt">
+                            <div>
+                                <label for="credit-card">Credit Card Number</label><br>
+                                <input type="tel" name="cardnumber" id="credit-card" class="sizes"
+                                    placeholder="12345 6789 98765 432">
+                            </div><br>
+                            <div>
+                                <label for="expiry">Expiration date</label><br>
+                                <input type="number" name="expiryNo" id="expiry" class="sizes" placeholder="12/99">
+                            </div><br>
+                        </div>
+                        <div class="ggt">
+                            <div>
+                                <label for="Security">Security Code</label><br>
+                                <input type="number" name="SecurityCd" id="Security" class="sizes" placeholder="420">
+                            </div><br>
+                            <div>
+                                <label for="Poster">Poster Code</label><br>
+                                <input type="text" name="PosterCd" id="Poster" class="sizes" placeholder="10139">
+                            </div><br>
+                        </div>
+                    </form>
+                    <div class="radio">
+                        <input type="radio" name="radio" id="radio" class="radio">
+                        <label for="txt">Use this card for next time purchase</label>
+                    </div><br>
+                    <button>Add Card</button>
                 </div>
             </div>
-        </div>
-        <div class="inputs">
-            <ul class="photos">
-                <li><img src="/img/visa.jfif" alt="visa" width="26px"></li>
-                <li><img src="/img/discover.jfif" alt="discover" width="90px"></li>
-                <li><img src="/img/paypal-featured-image-removebg-preview.png" alt="paypal" width="80px"></li>
-            </ul>
-            <div class="input-form">
-                <form action="post">
-                    <div class="ggt">
-                        <div>
-                            <label for="credit-card">Credit Card Number</label><br>
-                            <input type="tel" name="cardnumber" id="credit-card" class="sizes"
-                                placeholder="12345 6789 98765 432">
-                        </div><br>
-                        <div>
-                            <label for="expiry">Expiration date</label><br>
-                            <input type="number" name="expiryNo" id="expiry" class="sizes" placeholder="12/99">
-                        </div><br>
-                    </div>
-                    <div class="ggt">
-                        <div>
-                            <label for="Security">Security Code</label><br>
-                            <input type="number" name="SecurityCd" id="Security" class="sizes" placeholder="420">
-                        </div><br>
-                        <div>
-                            <label for="Poster">Poster Code</label><br>
-                            <input type="text" name="PosterCd" id="Poster" class="sizes" placeholder="10139">
-                        </div><br>
-                    </div>
-                </form>
-                <div class="radio">
-                    <input type="radio" name="radio" id="radio" class="radio">
-                    <label for="txt">Use this card for next time purchase</label>
-                </div><br>
-                <button>Add Card</button>
-            </div>
-        </div>
         </div>
     </section>
     <table>
