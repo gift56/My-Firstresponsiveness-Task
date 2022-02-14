@@ -50,17 +50,52 @@ header {
   text-align: center;
 }
 
+@media screen and (min-width: 800px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: right;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+  }
+  header span {
+    padding: 38px;
+  }
+}
+
 header a {
   text-decoration: none;
-  font-size: 18px;
   color: #333;
   font-weight: 700;
+}
+
+@media screen and (min-width: 800px) {
+  header a {
+    font-size: 24px;
+    padding: 40px;
+  }
 }
 
 header img {
   border-radius: 100%;
   height: 6vh;
   padding-left: 3px;
+}
+
+@media screen and (min-width: 800px) {
+  header img {
+    height: 10vh;
+    width: 6vw;
+  }
 }
 
 header .nav-links {
@@ -71,6 +106,25 @@ section {
   width: 100%;
   padding: 1em;
   line-height: 1.8;
+}
+
+@media screen and (min-width: 800px) {
+  section {
+    line-height: 1.6;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+  }
+  section .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
 }
 
 section h3 {
@@ -95,9 +149,30 @@ section .first-text {
   height: 45vh;
 }
 
+@media screen and (min-width: 800px) {
+  section .first-text {
+    width: 40vw;
+    margin-top: 0vh;
+    -webkit-animation-name: cards;
+            animation-name: cards;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+
 section .first-text .visa {
   float: right;
   padding: 1vh 3vw 0px 0px;
+}
+
+@media screen and (min-width: 800px) {
+  section .first-text .visa {
+    padding: 2vh 1vw 0px 0px;
+  }
 }
 
 section .first-text .visa img {
@@ -133,6 +208,15 @@ section .first-text .cards h1 {
   line-height: 3;
 }
 
+@media screen and (min-width: 800px) {
+  section .first-text .cards h1 {
+    text-align: left;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    line-height: 2.5;
+  }
+}
+
 section .first-text .cards img {
   margin: 15vh 12px 1px 0px;
 }
@@ -144,12 +228,26 @@ section .first-text .cards-visa {
   width: 83vw;
 }
 
+@media screen and (min-width: 800px) {
+  section .first-text .cards-visa {
+    margin: 0;
+    width: 30vw;
+  }
+}
+
 section .first-text .cards-visa .card-first-text {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: antiquewhite;
   margin: 0vh 0px 0px 5vw;
+}
+
+@media screen and (min-width: 800px) {
+  section .first-text .cards-visa .card-first-text {
+    margin-left: 2vw;
+    font-size: 18px;
+  }
 }
 
 section .first-text .cards-visa .card-first-number {
@@ -159,12 +257,26 @@ section .first-text .cards-visa .card-first-number {
   margin: 0vh 0px 0px 4vw;
 }
 
+@media screen and (min-width: 800px) {
+  section .first-text .cards-visa .card-first-number {
+    margin-left: 2vw;
+    font-size: 18px;
+  }
+}
+
 section .first-text .cards-visa .expired-text {
   font-size: 18px;
   color: antiquewhite;
   margin: 0vh 0px 0px 5vw;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
+}
+
+@media screen and (min-width: 800px) {
+  section .first-text .cards-visa .expired-text {
+    margin-left: 2vw;
+    font-size: 15px;
+  }
 }
 
 section .first-text .cards-visa .expired-text small {
@@ -178,12 +290,24 @@ section .first-text .cards-visa .card-firsts {
   margin-right: 9vw;
 }
 
+@media screen and (min-width: 800px) {
+  section .first-text .cards-visa .card-firsts {
+    font-size: 15px;
+  }
+}
+
 section .first-text .cards-visa .dist {
   font-size: 18px;
   color: antiquewhite;
   margin: 0vh 25vw 0px 0vw;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
+}
+
+@media screen and (min-width: 800px) {
+  section .first-text .cards-visa .dist {
+    margin: 0;
+  }
 }
 
 section .inputs {
@@ -201,6 +325,40 @@ section .inputs .photos {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  section .inputs .photos {
+    margin-bottom: 5vh;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  section .inputs form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+  section .inputs form .ggt {
+    padding: 0 1vw;
+  }
+  section .inputs form .sizes {
+    width: 26vw;
+    padding-left: 1vw;
+    border: 1px solid;
+  }
+  section .inputs form .sizes:focus {
+    outline: none;
+    border: 3px solid #0e6fe0;
+  }
+  section .inputs button {
+    width: 95%;
+    margin-left: 2vw;
+  }
 }
 
 section label {
@@ -222,6 +380,12 @@ section .radio {
   color: #333;
   font-size: 14px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 800px) {
+  section .radio {
+    margin-left: 2vw;
+  }
 }
 
 section button {
@@ -248,6 +412,19 @@ table {
   padding: 1em;
 }
 
+@media screen and (min-width: 800px) {
+  table table {
+    padding: 2vh 1vw;
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  table tr {
+    padding: 1vh 0;
+  }
+}
+
 table tr td {
   font-size: 18px;
   color: #423a4b;
@@ -255,6 +432,12 @@ table tr td {
 
 table tr td .small {
   color: #cfcecf;
+}
+
+@media screen and (min-width: 800px) {
+  table tr td:last-child {
+    text-align: right;
+  }
 }
 
 table tr button {
@@ -267,146 +450,15 @@ table tr button {
   color: #fff;
 }
 
+@media screen and (min-width: 800px) {
+  table tr button {
+    width: 20%;
+  }
+}
+
 table tr button:hover {
   cursor: pointer;
   background-color: #fff;
   color: #333;
-}
-
-@media screen and (min-width: 800px) {
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    text-align: right;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-  }
-  header span {
-    padding: 38px;
-  }
-  header a {
-    font-size: 24px;
-    padding: 40px;
-  }
-  header img {
-    height: 10vh;
-    width: 6vw;
-  }
-  section {
-    line-height: 1.6;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 1em;
-  }
-  section .first-text {
-    width: 40vw;
-    margin-top: 0vh;
-    -webkit-animation-name: cards;
-            animation-name: cards;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  section .first-text .visa {
-    float: right;
-    padding: 2vh 1vw 0px 0px;
-  }
-  section .first-text .cards h1 {
-    text-align: left;
-    margin-top: 3vh;
-    margin-left: 2vw;
-    line-height: 2.5;
-  }
-  section .first-text .cards-visa {
-    margin: 0;
-    width: 30vw;
-  }
-  section .first-text .cards-visa .card-first-text {
-    margin-left: 2vw;
-    font-size: 18px;
-  }
-  section .first-text .cards-visa .card-first-number {
-    margin-left: 2vw;
-    font-size: 18px;
-  }
-  section .first-text .cards-visa .expired-text {
-    margin-left: 2vw;
-    font-size: 15px;
-  }
-  section .first-text .cards-visa .dist {
-    margin: 0;
-  }
-  section .first-text .cards-visa .card-firsts {
-    font-size: 15px;
-  }
-  section .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-  }
-  section .radio {
-    margin-left: 2vw;
-  }
-  section button {
-    width: 95%;
-    margin-left: 2vw;
-  }
-  .inputs .photos {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-bottom: 5vh;
-  }
-  .inputs form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 100%;
-  }
-  .inputs form .ggt {
-    padding: 0 1vw;
-  }
-  .inputs form .sizes {
-    width: 26vw;
-    padding-left: 1vw;
-    border: 1px solid;
-  }
-  .inputs form .sizes:focus {
-    outline: none;
-    border: 3px solid #0e6fe0;
-  }
-  table {
-    padding: 2vh 1vw;
-    min-width: 100%;
-  }
-  table tr {
-    padding: 1vh 0;
-  }
-  table tr td:last-child {
-    text-align: right;
-  }
 }
 /*# sourceMappingURL=scss.css.map */
