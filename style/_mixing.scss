@@ -29,3 +29,43 @@
     margin-left: 2vw;
     font-size: 18px;
 }
+@mixin familys {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+@mixin card-first-number {
+    font-size: 21px;
+    font-weight: 100;
+    font-family: $family;
+}
+@mixin visa {
+    margin: 0px 0px 0px 2vw;
+    text-align: left;
+    border-bottom: 1px dashed #777377;
+}
+@mixin button {
+    height: 6vh;
+    background-color: $buttoncolor;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid;
+    color: $hover;    
+}
+@mixin btnH {
+    cursor: pointer;
+    background-color: $hover;
+    color: #333;
+}
+@mixin table {
+    font-family: $family;
+    border-top: 1px solid $border;
+    width: 100%;
+    padding: 1em;
+}
+@mixin sizes{
+    width: 87vw;
+    height: 7vh;
+    padding: 1em;
+    background-color: #ebe7eb;
+    border-radius: 9px;
+}

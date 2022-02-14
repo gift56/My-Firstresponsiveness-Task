@@ -1,9 +1,11 @@
 @media screen and (min-width: 800px) {
     header {
         @include mobilejj;
+        @include familys;
         text-align: right;
         justify-content: flex-end;
         font-family: $family;
+        padding: 0;
         span {
             padding: 38px;
         }
@@ -26,13 +28,16 @@
         .first-text {
             width: 40vw;
             margin-top: 0vh;
-
+            animation-name: cards;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards; 
             .visa{
                 float: right;
                 padding:2vh 1vw 0px 0px;
             }
 
-            .cards {
+            .cards {  
                 h1 {
                     text-align: left;
                     margin-top: 3vh;
@@ -94,6 +99,11 @@
             .sizes{
                 width: 26vw;
                 padding-left: 1vw;
+                border: 1px solid;
+                &:focus{
+                    outline: none;
+                    border: 3px solid $buttoncolor;
+                }
             }
 
         }
